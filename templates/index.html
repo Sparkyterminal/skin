@@ -1,0 +1,28 @@
+{% extends "base.html" %} {% block content %}
+    <div class="title-div">
+        <h2 class="purpose">Skin Cancer Detector Using AI</h2>
+    </div>
+    <form id="upload-file" method="post" enctype="multipart/form-data">
+        <div class="wrapper">
+            <label for="imageUpload" class="image-upload button --door">
+                Choose Photo...
+            </label>
+        </div>
+        <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+    </form>
+
+    <div class="image-section" style="display:none;">
+        <div class="wrapper">
+            <button type="button" class="button --door" id="btn-predict">Predict!</button>
+        </div>
+    </div>
+    <div class="all-results">
+
+    </div>
+    <div class="loader" style="display:none;"></div>
+
+    <div>
+
+    </div>
+
+{% endblock %}
